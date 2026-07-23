@@ -15,14 +15,14 @@ body{
 }
 
 .box-geral{
- width: 100%;
- min-height: 92vh; /* 100vh - altura do nav (8vh) */
- height: auto;
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
- padding: 40px 0;
+    width: 100%;
+    min-height: 92vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0;
 }
 
 nav{
@@ -96,13 +96,14 @@ nav{
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .conteudo-home{
-    width: 100%;
+    width: 260px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -115,17 +116,17 @@ nav{
 }
 
 .titulo-home h1 {
-    font-size: 26px;
+    font-size: 18px;
     text-align: center;
 }
 .texto-home p{
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
 }
 
 .conteudo-home a{
-    width: 62%;
-    height: 8vh;
+    width: 80%;
+    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,52 +134,55 @@ nav{
     border-radius: 20px;
     background-color: #eef426;
     color: white;
-    font-size: 22px;
+    font-size: 16px;
     cursor: pointer;
     text-decoration: none;
 }
 
+@media (max-width: 430px) {
+    .container-gereal{
+        gap: 14px;
+    }
+    .conteudo-home{
+        width: 45%;
+        min-width: 140px;
+    }
+    .titulo-home h1 {
+        font-size: 14px;
+    }
+    .texto-home p{
+        font-size: 11px;
+    }
+    .conteudo-home a{
+        width: 90%;
+        height: 6vh;
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 320px) {
-    .logo-div h1{ font-size: 26px; }
-    .opcoes-div img { width: 24px; }
-    .conteudo-home{ width: 80%; margin: 0 auto; }
-    .titulo-home h1 { font-size: 20px; }
-    .texto-home p{ font-size: 11px; }
-    .conteudo-home a{ width: 65%; height: 8vh; font-size: 19px; }
+    .logo-div h1{
+        font-size: 26px;
+    }
+    .opcoes-div img {
+        width: 24px; 
+    }
 }
 
-@media (min-width:321px) and (max-width: 345px) {
-    .logo-div h1{ font-size: 33px; }
-    .opcoes-div img { width: 26px; }
-    .conteudo-home{ width: 80%; margin: 0 auto; }
-    .titulo-home h1 { font-size: 22px; }
-    .texto-home p{ font-size: 16px; }
-    .conteudo-home a{ width: 65%; height: 8vh; font-size: 19px; }
+@media (min-width:321px) and (max-width: 375px) {
+    .logo-div h1{
+        font-size: 30px;
+    }
+    .opcoes-div img {
+        width: 27px; 
+    }
 }
 
-@media (min-width:346px) and (max-width: 375px) {
-    .logo-div h1{ font-size: 27px; }
-    .opcoes-div img { width: 28px; }
-    .conteudo-home{ width: 80%; margin: 0 auto; }
-    .titulo-home h1 { font-size: 23px; }
-    .texto-home p{ font-size: 12px; }
-    .conteudo-home a{ width: 65%; height: 8vh; font-size: 19px; }
-}
-
-@media (min-width:376px) and (max-width: 390px) {
-    .logo-div h1{ font-size: 36px; }
-    .opcoes-div img { width: 33px; }
-    .conteudo-home{ width: 80%; margin: 0 auto; }
-    .titulo-home h1 { font-size: 25px; }
-    .texto-home p{ font-size: 13px; }
-    .conteudo-home a{ width: 65%; height: 8vh; font-size: 22px; }
-}
-
-@media (min-width:391px) and (max-width: 430px) {
-    .logo-div h1{ font-size: 38px; }
-    .opcoes-div img { width: 33px; }
-    .conteudo-home{ width: 80%; margin: 0 auto; }
-    .titulo-home h1 { font-size: 26px; }
-    .texto-home p{ font-size: 14px; }
-    .conteudo-home a{ width: 65%; height: 8vh; font-size: 25px; }
+@media (min-width:376px) and (max-width: 430px) {
+    .logo-div h1{
+        font-size: 37px;
+    }
+    .opcoes-div img {
+        width: 33px; 
+    }
 }
